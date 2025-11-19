@@ -1,11 +1,11 @@
 #!/bin/bash  
 
-export UUID=${UUID:-'fdeeda45-0a8e-4570-bcc6-d68c995f5830'} # 如开启哪吒v1,不同的平台需要改一下，否则会覆盖
+export UUID=${UUID:-'1bd38db8-c480-4e4d-84e1-82534dbf3fb6'} # 如开启哪吒v1,不同的平台需要改一下，否则会覆盖
 export NEZHA_SERVER=${NEZHA_SERVER:-''}       # v1哪吒填写形式：nezha.abc.com:8008,v0哪吒填写形式：nezha.abc.com
 export NEZHA_PORT=${NEZHA_PORT:-''}           # v1哪吒必须留空,v0哪吒agent端口为{443,8443,2053,2083,2087,2096}其中之一时自动开启tls
 export NEZHA_KEY=${NEZHA_KEY:-''}             # 哪吒v0-agent密钥或v1的NZ_CLIENT_SECRET
-export ARGO_DOMAIN=${ARGO_DOMAIN:-''}         # 固定隧道域名,留空即启用临时隧道
-export ARGO_AUTH=${ARGO_AUTH:-''}             # 固定隧道token或json,留空即启用临时隧道, json获取：https://json.zone.id
+export ARGO_DOMAIN=${ARGO_DOMAIN:-'wa.zeroteach.dpdns.org'}         # 固定隧道域名,留空即启用临时隧道
+export ARGO_AUTH=${ARGO_AUTH:-'eyJhIjoiY2UwMjljN2I3ZWUzMzU0MjhiMjE1ZjM0YTNkOWNkZmEiLCJ0IjoiMmUyNTUyOTItZGVlOC00Y2ZlLTlhMmUtMWVmM2U4ZmM2OTY0IiwicyI6Ik16aGxOVGswTjJVdFlXWmhNeTAwTm1aaExXRTRZell0T0dFMlpXRmtPVEF5TURVeCJ9'}             # 固定隧道token或json,留空即启用临时隧道, json获取：https://json.zone.id
 export CFIP=${CFIP:-'time.is'}                # argo节点优选域名或优选ip
 export CFPORT=${CFPORT:-'443'}                # argo节点端口 
 export NAME=${NAME:-'sbx'}                    # 节点名称  
